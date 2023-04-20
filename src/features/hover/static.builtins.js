@@ -17,38 +17,38 @@ const BUILTINS = {
         "security": ""
     },
     "component": {
-        "prefix": "component ",
-        "description": "Instantiate a template.",
+        "prefix": "component",
+        "description": "Instantiates a template.",
         "security": ""
     },
     "template": {
-        "prefix": "template ",
-        "description": "Define a new circuit.",
+        "prefix": "template",
+        "description": "Defines a new circuit.",
         "security": ""
     },
     "signal": {
-        "prefix": "signal ",
-        "description": "Declare a new signal.",
+        "prefix": "signal",
+        "description": "Declares a new signal.",
         "security": ""
     },
     "input": {
-        "prefix": "input ",
-        "description": "Declare the signal as input.",
+        "prefix": "input",
+        "description": "Declares the signal as input.",
         "security": ""
     },
     "output": {
-        "prefix": "output ",
-        "description": "Declare the signal as output.",
+        "prefix": "output",
+        "description": "Declares the signal as output.",
         "security": ""
     },
     "public": {
-        "prefix": "public ",
-        "description": "Declare the signal as public.",
+        "prefix": "public",
+        "description": "Declares the signal as public.",
         "security": ""
     },
     "parallel": {
-        "prefix": "paralle ",
-        "description": "To generate C code with the parallel component or template.",
+        "prefix": "parallel",
+        "description": "Generates C code with the parallel component or template.",
         "security": ""
     }
 }

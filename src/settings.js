@@ -16,7 +16,7 @@ function extensionConfig() {
 }
 
 function LOG(msg, prefix, file, data) {
-    const logline = `${prefix ? prefix + ' ' : ''}(circom-pro)${file ? ` [${file}]` : ''} ${msg} ${data ? `\n${JSON.stringify(data, null, 2)}` : ""}`
+    const logline = `${prefix ? prefix + ' ' : ''}(circom-pro)${file ? ` [${file}]` : ''} ${msg} ${data ? `\n${JSON.stringify(data, null, 4)}` : ""}`
     vscode.window.outputChannel?.appendLine(logline)
     console.log(logline);
 }

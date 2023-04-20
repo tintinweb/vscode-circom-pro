@@ -3,7 +3,7 @@
     "displayName": "Circom Pro",
     "description": "Circom compiler, snippets, hover and language support for Visual Studio Code",
     "license": "MIT",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "preview": true,
     "keywords": [
         "circom",
@@ -45,13 +45,8 @@
             "properties": {
                 "circompro.compile.onSave": {
                     "type": "boolean",
-                    "default": true,
-                    "description": "Automatically compile when saving and annotate code with compile results."
-                },
-                "circompro.compile.verbose": {
-                    "type": "boolean",
                     "default": false,
-                    "markdownDescription": "Enable/Suppress Compiler Success/Error Information Popup Messages. Compiler errors will still be decorated in the editor."
+                    "description": "Automatically compile when saving and annotate code with compile results."
                 },
                 "circompro.mode.active": {
                     "type": "boolean",
@@ -67,11 +62,6 @@
                     "type": "boolean",
                     "default": true,
                     "description": "Whether to enable/disable circom tooltips/hover information."
-                },
-                "circompro.analysis.onSave": {
-                    "type": "boolean",
-                    "default": true,
-                    "markdownDescription": "Automatically submit the compiled bytecode to MythX for security analysis and annotate the code with the security scan results. See https://mythx.io for details"
                 }
             }
         },
@@ -103,12 +93,12 @@
         "test-in-browser": "npm run compile-web && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
     },
     "dependencies": {
-        "@zefi/circomjs": "^1.0.6",
-        "path-browserify": "^1.0.1"
+        "@zefi/circomjs": "^1.0.6"
     },
     "devDependencies": {
         "webpack-cli": "^5.0.1",
         "webpack": "^5.78.0",
-        "@vscode/test-web": "^0.0.41"
+        "@vscode/test-web": "^0.0.41",
+        "path-browserify": "^1.0.1"
     }
 }

@@ -154,7 +154,7 @@ function onActivate(context) {
                 vscode.window.showWarningMessage('🤷‍♂️ "circuit.config.json" already exists in the workspace.');
             } catch (error) {
                 // If the file does not exist, create it with the initial content of an empty JSON object
-                await vscode.workspace.fs.writeFile(fileUri, new Uint8Array(Buffer.from(JSON.stringify(circuitConfig.config, null, 2))));
+                await vscode.workspace.fs.writeFile(fileUri, new Uint8Array(Buffer.from(JSON.stringify(circuitConfig.config, null, 4))));
                 settings.LOG('"circuit.config.json" created in the workspace.',"👍")
                 vscode.window.showInformationMessage('👍 "circuit.config.json" created in the workspace.');
             }

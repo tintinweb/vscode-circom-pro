@@ -1,0 +1,14 @@
+{
+    "projectName": "MyCircuits",
+    "outputDir": "./out",
+    "build": {
+        "inputDir": "./circuits",
+        "circuits": [
+            {
+                "cID": "multiply",
+                "fileName": "multiply.circom",
+                "compilationMode": "wasm"
+            }
+        ]
+    }
+}
