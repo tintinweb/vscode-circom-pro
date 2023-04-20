@@ -1,0 +1,78 @@
+{
+    ".source.circom": {
+        "template declaration": {
+            "prefix": "template",
+            "body": "template ${1:_name}(${2:_arg}) {\n\n\t// Declaration of signals.\n\tsignal input ${3:_in};\n\tsignal output ${4:_out};\n\n\t// Constraints.\n\n}\n"
+        },
+        "template parallel declaration": {
+            "prefix": "template parallel",
+            "body": "template parallel ${1:_name}(${2:_arg}) {\n\n\t// Declaration of signals.\n\tsignal input ${3:_in};\n\tsignal output ${4:_out};\n\n\t// Constraints.\n\n}\n"
+        },
+        "template custom declaration": {
+            "prefix": "template custom",
+            "body": "template custom ${1:_name}(${2:_arg}) {\n\n\t// Declaration of signals.\n\tsignal input ${3:_in};\n\tsignal output ${4:_out};\n\n\t// Constraints.\n\n}\n"
+        },
+        "component main": {
+            "prefix": "component main",
+            "body": "component main = ${1:_template}(${2:_arg})"
+        },
+        "component": {
+            "prefix": "component",
+            "body": "component ${1:_var} = ${1:_template}(${2:_arg})"
+        },
+        "pragma circom": {
+            "prefix": "pragma circom",
+            "body": "pragma circom  ${1:_version};"
+        },
+        "pragma custom": {
+            "prefix": "pragma custom",
+            "body": "pragma custom_templates;"
+        },
+        "for loop": {
+            "prefix": "for",
+            "body": "for (i = ${1:_start}; i < ${1:_end}; i++){\n\n}"
+        },
+        "while loop": {
+            "prefix": "while",
+            "body": "while (${1:_condition}){\n\n}"
+        },
+        "if condition": {
+            "prefix": "ifelse",
+            "body": "if (${1:_condition}){\n\n} else {\n\n}"
+        },
+        "function": {
+            "prefix": "function ",
+            "body": "function ${1:_name} (${2:_arg}) {\n\n}\n"
+        },
+        "proof.input": {
+            "prefix": "proof.input ",
+            "body": "/*\nproof.input = {\n\t\t\"${1:_var}\":${2:_value},\n\t\t\"${3:_var}\":${4:_value},\n\t}\n*/\n"
+        },
+        "proof.verify": {
+            "prefix": "proof.verify ",
+            "body": "/*\nproof.verify = {\n\t\t\"${1:_var}\":${2:_value},\n\t\t\"${3:_var}\":${4:_value},\n\t}\n*/\n"
+        },
+        "include": {
+            "prefix": "include ",
+            "body": "include \"${1:_file}\";"
+        },
+        "signal declaration": {
+            "prefix": "signal ",
+            "body": "signal ${1:input|output} ${2:_name};"
+        },
+        "var declaration": {
+            "prefix": "var ",
+            "body": "var ${1:_name} = ${2:_value};"
+        }
+        ,
+        "assert": {
+            "prefix": "assert",
+            "body": "assert(${1:_condition});"
+        }
+        ,
+        "log": {
+            "prefix": "log",
+            "body": "log(${1:_msg});"
+        }
+    }
+}

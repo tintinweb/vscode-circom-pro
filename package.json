@@ -1,0 +1,114 @@
+{
+    "name": "vscode-circom-pro",
+    "displayName": "Circom Pro",
+    "description": "Circom compiler, snippets, hover and language support for Visual Studio Code",
+    "license": "MIT",
+    "version": "0.0.3",
+    "preview": true,
+    "keywords": [
+        "circom",
+        "compiler",
+        "snippets"
+    ],
+    "publisher": "tintinweb",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.76.2"
+    },
+    "categories": [
+        "Programming Languages",
+        "Other",
+        "Snippets"
+    ],
+    "bugs": {
+        "url": "https://github.com/tintinweb/vscode-circom-pro/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tintinweb/vscode-circom-pro"
+    },
+    "activationEvents": [
+        "onLanguage:circom"
+    ],
+    "main": "./src/extension.js",
+    "browser": "./dist/web/extension.js",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "circom",
+                "path": "./snippets/circom.json"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Circom Pro",
+            "properties": {
+                "circompro.compile.onSave": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Automatically compile when saving and annotate code with compile results."
+                },
+                "circompro.compile.verbose": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "Enable/Suppress Compiler Success/Error Information Popup Messages. Compiler errors will still be decorated in the editor."
+                },
+                "circompro.mode.active": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable/Disable all active components of this extension (emergency)."
+                },
+                "circompro.decoration.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to enable/disable circom active syntax highlighting for security."
+                },
+                "circompro.hover.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to enable/disable circom tooltips/hover information."
+                },
+                "circompro.analysis.onSave": {
+                    "type": "boolean",
+                    "default": true,
+                    "markdownDescription": "Automatically submit the compiled bytecode to MythX for security analysis and annotate the code with the security scan results. See https://mythx.io for details"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "circompro.compile.this",
+                "title": "CircomPro: Compile This Circuit"
+            },
+            {
+                "command": "circompro.compile.all",
+                "title": "CircomPro: Compile All Circuits"
+            },
+            {
+                "command": "circompro.circuit.config.new",
+                "title": "CircomPro: Generate circuit.config.json"
+            }
+        ]
+    },
+    "extensionPack": [
+        "iden3.circom"
+    ],
+    "scripts": {
+        "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/index.js",
+        "pretest": "npm run compile-web",
+        "vscode:prepublish": "npm run package-web",
+        "compile-web": "webpack -c config/web.webpack.config.js",
+        "watch-web": "webpack -c config/web.webpack.config.js --watch",
+        "package-web": "webpack -c config/web.webpack.config.js --mode production --devtool hidden-source-map",
+        "test-in-browser": "npm run compile-web && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+    },
+    "dependencies": {
+        "@zefi/circomjs": "^1.0.6",
+        "path-browserify": "^1.0.1"
+    },
+    "devDependencies": {
+        "webpack-cli": "^5.0.1",
+        "webpack": "^5.78.0",
+        "@vscode/test-web": "^0.0.41"
+    }
+}
