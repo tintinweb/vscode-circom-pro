@@ -5,7 +5,7 @@
 
 <img width="300" alt="get in touch with Consensys Diligence" src="https://user-images.githubusercontent.com/2865694/233320356-6d877a83-faac-4470-982a-28e115c85864.png">
 
-# vscode extension  
+# 👩‍💻 vscode extension  
 
 
 ### Snippets
@@ -41,8 +41,11 @@ proof.input =  {
 
 [<img width="600" alt="Settings" src="https://user-images.githubusercontent.com/2865694/233334155-c15ce183-cadb-4cc6-b657-af71bc19f9aa.png">](https://user-images.githubusercontent.com/2865694/233334155-c15ce183-cadb-4cc6-b657-af71bc19f9aa.png)
 
+# 🐞 Feedback/Bugs
 
-# Acknowledgements
+Please file questions/bugs with the projects [GitHub Issue Tracker](https://github.com/tintinweb/vscode-circom-pro/issues) 🙌.
+
+# 🫶 Acknowledgements
 
 * [iden3.circom](https://marketplace.visualstudio.com/items?itemName=iden3.circom) - bundled extension: circom language support / highlighting
 * [@zefi/circomjs](https://www.npmjs.com/package/@zefi/circomjs) - compiler framework
