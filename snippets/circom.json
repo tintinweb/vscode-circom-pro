@@ -14,11 +14,11 @@
         },
         "component main": {
             "prefix": "component main",
-            "body": "component main = ${1:_template}(${2:_arg})"
+            "body": "component main = ${1:_template}(${2:_arg});"
         },
         "component": {
             "prefix": "component",
-            "body": "component ${1:_var} = ${1:_template}(${2:_arg})"
+            "body": "component ${1:_var} = ${1:_template}(${2:_arg});"
         },
         "pragma circom": {
             "prefix": "pragma circom",
