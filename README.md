@@ -10,25 +10,25 @@
 
 Snippets:
 
-[<img width="400" alt="Snippets" src="https://user-images.githubusercontent.com/2865694/233330364-4ade0a9a-23f4-4083-a9dc-369169ce9a15.gif">](https://user-images.githubusercontent.com/2865694/233330364-4ade0a9a-23f4-4083-a9dc-369169ce9a15.gif)
+[<img width="600" alt="Snippets" src="https://user-images.githubusercontent.com/2865694/233330364-4ade0a9a-23f4-4083-a9dc-369169ce9a15.gif">](https://user-images.githubusercontent.com/2865694/233330364-4ade0a9a-23f4-4083-a9dc-369169ce9a15.gif)
 
 
 Compiling, Proof Generation, and Verification:
 
-[<img width="400" alt="Snippets" src="https://user-images.githubusercontent.com/2865694/233328350-7b9d5c29-1328-4e10-947c-bc5a15561e83.gif">](https://user-images.githubusercontent.com/2865694/233328350-7b9d5c29-1328-4e10-947c-bc5a15561e83.gif)
+[<img width="600" alt="Compiler" src="https://user-images.githubusercontent.com/2865694/233328350-7b9d5c29-1328-4e10-947c-bc5a15561e83.gif">](https://user-images.githubusercontent.com/2865694/233328350-7b9d5c29-1328-4e10-947c-bc5a15561e83.gif)
 
 
 Bootstrapping a circomjs circuit config for the compiler:
 
-[<img width="400" alt="Snippets" src="https://user-images.githubusercontent.com/2865694/233328327-57561823-bd88-4288-a44c-cee6325c5465.gif">](https://user-images.githubusercontent.com/2865694/233328327-57561823-bd88-4288-a44c-cee6325c5465.gif)
+[<img width="600" alt="Config" src="https://user-images.githubusercontent.com/2865694/233328327-57561823-bd88-4288-a44c-cee6325c5465.gif">](https://user-images.githubusercontent.com/2865694/233328327-57561823-bd88-4288-a44c-cee6325c5465.gif)
 
 Commands:
 
-[<img width="400" alt="image" src="https://user-images.githubusercontent.com/2865694/233327059-5579da45-a464-43b2-af4a-3c4f332511c1.png">](https://user-images.githubusercontent.com/2865694/233327059-5579da45-a464-43b2-af4a-3c4f332511c1.png)
+[<img width="600" alt="Commands" src="https://user-images.githubusercontent.com/2865694/233327059-5579da45-a464-43b2-af4a-3c4f332511c1.png">](https://user-images.githubusercontent.com/2865694/233327059-5579da45-a464-43b2-af4a-3c4f332511c1.png)
 
 Settings:
 
-[<img width="400" alt="image" src="https://user-images.githubusercontent.com/2865694/233334155-c15ce183-cadb-4cc6-b657-af71bc19f9aa.png">](https://user-images.githubusercontent.com/2865694/233334155-c15ce183-cadb-4cc6-b657-af71bc19f9aa.png)
+[<img width="600" alt="Settings" src="https://user-images.githubusercontent.com/2865694/233334155-c15ce183-cadb-4cc6-b657-af71bc19f9aa.png">](https://user-images.githubusercontent.com/2865694/233334155-c15ce183-cadb-4cc6-b657-af71bc19f9aa.png)
 
 
 # Acknowledgements
